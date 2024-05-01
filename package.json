@@ -1,0 +1,31 @@
+{
+    "type": "module",
+    "scripts": {
+        "build": "pnpm exec vite build && pnpm exec capacitor copy",
+        "dev": "rm -rf node_modules/.vite && pnpm exec vite",
+        "prettier": "pnpm exec prettier . --write --list-different --cache --cache-strategy metadata"
+    },
+    "dependencies": {
+        "@capacitor/android": "^5.7.5",
+        "@capacitor/core": "^5.7.5",
+        "@photo-sphere-viewer/core": "^5.7.3",
+        "react": "^18.3.1",
+        "react-dom": "^18.3.1",
+        "tailwindcss": "^3.4.3"
+    },
+    "devDependencies": {
+        "@capacitor/cli": "^5.7.5",
+        "@types/react": "^18.3.1",
+        "@types/react-dom": "^18.3.0",
+        "@vitejs/plugin-react-swc": "^3.6.0",
+        "autoprefixer": "^10.4.19",
+        "fs-extra": "^11.2.0",
+        "prettier": "^3.2.5",
+        "prettier-plugin-jsdoc": "^1.3.0",
+        "prettier-plugin-organize-imports": "^3.2.4",
+        "prettier-plugin-packagejson": "^2.5.0",
+        "prettier-plugin-tailwindcss": "^0.5.14",
+        "sass": "^1.76.0",
+        "vite": "^5.2.10"
+    }
+}

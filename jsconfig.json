@@ -1,0 +1,13 @@
+{
+    "compilerOptions": {
+        "baseUrl": ".",
+        "checkJs": true,
+        "module": "NodeNext",
+        "moduleResolution": "nodenext",
+        "resolveJsonModule": true,
+        "paths": {
+            "@/types/*": ["types/*"]
+        }
+    },
+    "exclude": ["android", "node_modules", "packages", "public", "www"]
+}

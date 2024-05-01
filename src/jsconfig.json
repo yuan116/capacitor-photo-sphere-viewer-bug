@@ -1,0 +1,14 @@
+{
+    "compilerOptions": {
+        "baseUrl": ".",
+        "checkJs": true,
+        "paths": {
+            "@/*": ["./*"]
+        },
+        "module": "ES2022",
+        "moduleResolution": "Bundler",
+        "target": "ES2022",
+        "jsx": "react-jsx"
+    },
+    "exclude": ["../node_modules"]
+}

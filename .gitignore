@@ -1,0 +1,8 @@
+# Node
+/node_modules
+
+# Other
+.DS_Store
+
+# Application
+/www
