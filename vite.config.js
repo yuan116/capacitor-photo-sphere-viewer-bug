@@ -58,9 +58,9 @@ export default defineConfig((env) => {
 
                             return !url.hostname.startsWith('100.64.0.');
                         });
-                        console.log();
 
                         if (localIP === undefined) {
+                            console.log();
                             console.log('Capacitor Live Reload unvailable');
                             console.log('    Please ensure your device is connected to a network');
                             console.log();
@@ -68,6 +68,7 @@ export default defineConfig((env) => {
                             return;
                         }
 
+                        fsExtra.mkdirpSync('www');
                         fsExtra.writeFileSync(path.join('www', 'capacitor-live-reload-url'), localIP);
 
                         import('node:child_process').then(async (childProcess) => {
